@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuNg | Магазин одежды</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #ffffff; color: #222222; }
+        a { text-decoration: none; color: inherit; }
+        
+        .promo-bar { background-color: #e50010; color: white; text-align: center; padding: 8px; font-size: 0.8rem; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+
+        header { padding: 20px 5%; display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid #e5e5e5; }
+        .logo {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.logo img {
+    height: 120px; 
+    width: auto; 
+    display: block;
+}
+        
+        nav { display: flex; gap: 30px; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
+        .sale-link { color: #e50010; }
+
+        .hero { 
+            position: relative;
+        background: url('img/background.png') no-repeat center center / cover; 
+    height: 80vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: flex-end; 
+            padding-bottom: 50px;
+        }
+        .hero-text { text-align: center; color: #fff; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); margin-bottom: 20px; }
+        .hero-text h1 { font-size: 3rem; margin: 0 0 10px; font-weight: 700; text-transform: uppercase; }
+        .btn { background-color: #222; color: #fff; padding: 15px 40px; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; transition: background 0.3s; }
+        .btn:hover { background-color: #555; }
+
+        .categories { display: flex; gap: 15px; padding: 40px 5%; justify-content: center; flex-wrap: wrap; }
+        .cat-card { position: relative; width: calc(33.333% - 10px); height: 400px; background-color: #f4f4f4; overflow: hidden; }
+        .cat-card img { width: 100%; height: 100%; object-fit: cover; }
+        .cat-title { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px 30px; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+
+        .section-title { text-align: center; margin: 60px 0 30px; font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .products { display: flex; justify-content: space-between; gap: 20px; padding: 0 5% 60px; flex-wrap: wrap; }
+        .product-card { width: calc(25% - 15px); text-align: left; cursor: pointer; }
+        .product-card img { width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; margin-bottom: 10px; background-color: #f4f4f4; }
+        .product-info h3 { margin: 0 0 5px; font-size: 0.9rem; font-weight: normal; color: #222; }
+        .price { font-size: 1rem; font-weight: bold; }
+        .price-new { color: #e50010; }
+        .price-old { text-decoration: line-through; color: #999; font-size: 0.85rem; margin-left: 5px; font-weight: normal; }
+
+        footer { background-color: #e4e4e4; padding: 60px 5% 30px; display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 0.85rem; color: #555; }
+        .footer-links { display: flex; gap: 40px; margin-bottom: 40px; text-transform: uppercase; font-weight: bold; }
+        .footer-links a:hover { color: #000; }
+    </style>
+</head>
+<body>
+    <header>
+       <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="YuNg Logo">
+</a>
+        <nav>
+            <a href="women.html">Женщины</a>
+            <a href="men.html">Мужчины</a>
+            <a href="kids.html">Дети</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Весеннее обновление</h1>
+        </div>
+        <a href="#" class="btn">Смотреть новинки</a>
+    </section>
+
+    <section class="categories">
+        <a href="#" class="cat-card">
+<img src="img/women.png" class="main-image">
+            <span class="cat-title">Худи</span>
+        </a>
+        <a href="#" class="cat-card">
+            <img src="img/sweatshirt.jpg" class="main-image">
+            <span class="cat-title">свитшоты</span>
+        </a>
+        <a href="#" class="cat-card">
+     <img src="img/jeans.jpg" class="main-image">
+            <span class="cat-title">Джинсы</span>
+        </a>
+    </section>
+
+    <h2 class="section-title">Выбор покупателей</h2>
+    
+    <section class="products">
+        <div class="product-card">
+          <img src="img/t-short.jpeg" class="main-image">
+            <div class="product-info">
+                <h3>Базовая футболка из хлопка</h3>
+                <span class="price">999 ₽</span>
+            </div>
+        </div>
+        <div class="product-card">
+          <img src="img/nig.png" class="main-image">
+            <div class="product-info">
+                <h3>Куртка оверсайз</h3>
+                <span class="price">4 999 ₽</span>
+            </div>
+        </div>
+        <div class="product-card">
+          <img src="img/karl ani.png" class="main-image">
+            <div class="product-info">
+                <h3>Джинсы karl kani</h3>
+                <span class="price">2 999 ₽</span>
+            </div>
+        </div>
+        <div class="product-card">
+          <img src="img/myman.jpg" class="main-image">
+           <div class="product-info">
+                <h3>Свитер тонкой вязки</h3>
+                <span class="price">1 599 ₽</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Магазины</a>
+            <a href="#">Служба поддержки</a>
+            <a href="#">О компании</a>
+        </div>
+        <p>© 2026 YuNg. Концепция дизайна вдохновлена современными решениями масс-маркета.</p>
+    </footer>
+
+</body>
+</html>
